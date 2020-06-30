@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
 
-function Child(props) {
+function Child() {
+    let  value = useContext(valueContext);
   return (
     <div>
-      Child number = {props.num}
+      Child number = {value}
     </div>
   );
 }
