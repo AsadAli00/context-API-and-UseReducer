@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import ValueContext from './valueContext'
+
 import './App.css';
 
 function Child() {
-    let  value = useContext(valueContext);
+    let  value = useContext(ValueContext);
   return (
     <div>
       Child number = {value}
